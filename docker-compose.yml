@@ -1,0 +1,11 @@
+version: "3.9"
+
+services:
+  script:
+    build:
+      context: ./
+    volumes:
+      - ./workspace:/home/node/workspace
+    env_file:
+      - .env
+    tty: true
